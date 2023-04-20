@@ -74,3 +74,9 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
+# This code uses the PyCrypto library to implement the AES-256 encryption algorithm. When encrypting a file, the code prompts the user for a password and uses it to generate a key using SHA-256 hashing algorithm. It then encrypts the file in 64 KB chunks using Cipher Block Chaining (CBC) mode, and writes the initialization vector (IV) and the encrypted data to a new file with a ".encrypted" extension. Finally, the original file is deleted for added security.
+
+# When decrypting a file, the code prompts the user for the password, reads the IV from the beginning of the encrypted file, and then decrypts the data using the same key and CBC mode. It then writes the decrypted data to a new file with the ".encrypted" extension removed.
+
+# Please note that this code is intended for educational purposes only and should not be used for any malicious activities. Additionally, it may not be suitable for securing sensitive or high-risk data and should be thoroughly reviewed and tested before being used in a production environment.
